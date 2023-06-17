@@ -43,11 +43,67 @@ input[class^="btn-"]:hover{
     color: $light-color;
 }
 
+
+// Backgrounds
+.bg{
+    &-main{
+        background-color: $main-color;
+        color: $light-color;
+    }
+    &-dark{
+        background-color: $dark-color;
+        color: $light-color;
+    }
+    &-light{
+        background-color: $light-color;
+        color: $dark-color;
+    }
+}
+
 .lead{
-    font-size: 2rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
 }
 
 .text-center{
     text-align: center;
+}
+
+// padding bottom
+.py-1{
+    padding: 1rem 0;
+}
+.py-2{
+    padding: 2rem 0;
+}
+.py-3{
+    padding: 3rem 0;
+}
+.py-4{
+    padding: 4rem 0;
+}
+
+// margin bottom
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+.my-3 {
+    margin: 3rem 0;
+}
+
+.my-4 {
+    margin: 4rem 0;
+}
+
+.bottom-line {
+    height: 2px;
+    width: 3rem;
+    background: #ffbc00;
+    display: block;
+    margin: 0 auto 1rem auto;
 }
