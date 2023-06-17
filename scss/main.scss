@@ -110,10 +110,62 @@ img{
             z-index: 20;
         }
 
+        & ~footer{
+            z-index: 20;;
+        }
+
     }
 
     &-inner{
+        background: $bg-image no-repeat 20% 30% /cover;
+        height: 8rem;
+        border-bottom: 3px solid $main-color;
+        position: relative;
 
+
+        &::before {
+                content: " ";
+                display: block;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.7);
+                z-index: 2;
+            }
+        
+            & * {
+                z-index: 20;
+            }
+
+        //     
+
+    }
+}
+
+// About section
+#about{
+    &-a{
+        .about-info{
+             display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 1.2rem;
+
+            .bio{
+                border-left: 3px solid $main-color;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                h4{
+                    margin-top: -2rem;
+                }
+            }
+        }
     }
 }
 
