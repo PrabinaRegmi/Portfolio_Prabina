@@ -1,6 +1,7 @@
 // Import partials
 @import 'config';
 @import 'utilities';
+@import 'items';
 
 // General styling
 * {
@@ -41,7 +42,7 @@ img{
 // navbar
 #main-nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding-top: 1rem;
    
 
@@ -79,6 +80,7 @@ img{
         height: 90vh;
         color: #fff;
         position: relative;
+       
 
         // header content
         .header-content {
@@ -119,7 +121,7 @@ img{
     &-inner{
         background: $bg-image no-repeat 20% 30% /cover;
         height: 8rem;
-        border-bottom: 3px solid $main-color;
+        border-bottom: 3.5px solid $main-color;
         position: relative;
 
 
@@ -139,18 +141,25 @@ img{
                 z-index: 20;
             }
 
-        //     
+        #main-footer{
+            height: 50rem;
+        }     
 
     }
 }
 
 // About section
 #about{
+    // About-a
     &-a{
+       
+   
         .about-info{
-             display: grid;
+            display: grid;
             grid-template-columns: repeat(2,1fr);
+            grid-row: 1;
             gap: 1.2rem;
+           
 
             .bio{
                 border-left: 3px solid $main-color;
@@ -163,7 +172,27 @@ img{
 
                 h4{
                     margin-top: -2rem;
+                    
                 }
+            }
+        }
+    }
+
+    // About-b
+    &-b{
+        
+        .progress{
+            overflow: hidden;
+            height: 20px;
+            background-color: $medium-color;
+            border-radius: 5px;
+            margin-bottom: 0.5;
+
+            div{
+                height: 100%;
+                color: #fff;
+                text-align: center;
+                background-color: $main-color;
             }
         }
     }
@@ -174,12 +203,13 @@ img{
 #main-footer{
     background-color: $dark-color;
     color: white;
-    height: 10vh;
+    height: 10rem;
+    margin-bottom: 0;
 
     .footer-content{
         display: flex;
         justify-content: space-between;
-        height: 10vh;
+        height: 100%;
         align-items: center;
 
         .social .fab{
