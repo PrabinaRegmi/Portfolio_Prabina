@@ -58,6 +58,10 @@ input[class^="btn-"]:hover{
         background-color: $light-color;
         color: $dark-color;
     }
+    &-gray{
+        background-color: $gray-color;
+        color: $light-color;
+    }
 }
 
 .lead{
